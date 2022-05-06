@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="421.0" prefWidth="552.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.SearchController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="326.0" layoutY="97.0" stroke="BLACK" strokeType="INSIDE" width="552.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.8245000243186951" blue="0.9700000286102295" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <AnchorPane prefHeight="62.0" prefWidth="552.0" style="-fx-background-color: #7ffff0;">
+         <children>
+            <Label layoutX="132.0" layoutY="3.0" text="DreamTravels" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="49.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="62.0" prefHeight="35.0" prefWidth="552.0" style="-fx-background-color: #ff8989;">
+         <children>
+            <Label fx:id="l2" layoutX="14.0" layoutY="4.0" textFill="#fff981">
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="23.0" />
+               </font>
+            </Label>
+            <Button layoutX="489.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleButtonActionHome" text="Home" />
+            <Button layoutX="423.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleButtonActionBack" text="Back" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="ftable" layoutX="8.0" layoutY="109.0" prefHeight="214.0" prefWidth="537.0">
+        <columns>
+          <TableColumn fx:id="flightid" prefWidth="58.40008544921875" text="Flight ID" />
+          <TableColumn fx:id="arline" prefWidth="57.60003662109375" text="Airline" />
+            <TableColumn fx:id="source" prefWidth="54.4000244140625" text="Source" />
+            <TableColumn fx:id="destination" prefWidth="72.79998779296875" text="Destination" />
+            <TableColumn fx:id="duration" prefWidth="59.199951171875" text="Duration" />
+            <TableColumn fx:id="price" prefWidth="52.0" text="Price" />
+            <TableColumn fx:id="tdate" prefWidth="79.20001220703125" text="Date" />
+            <TableColumn fx:id="depart" prefWidth="49.60003662109375" text="Depart" />
+            <TableColumn fx:id="arrival" prefWidth="53.5999755859375" text="Arrival" />
+        </columns>
+      </TableView>
+      <TextField fx:id="finalid" layoutX="211.0" layoutY="326.0" prefHeight="26.0" prefWidth="75.0" />
+      <Label layoutX="14.0" layoutY="329.0" text="Enter Flight Id To Book: ">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="428.0" layoutY="377.0" mnemonicParsing="false" onAction="#handleButtonActioncnfrm" text="Confirm Booking" />
+      <Label fx:id="l3" layoutX="169.0" layoutY="390.0" prefHeight="18.0" prefWidth="281.0" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choicebox" layoutX="169.0" layoutY="364.0" prefWidth="150.0" />
+      <Label layoutX="18.0" layoutY="367.0" text="Payment Mode :">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
