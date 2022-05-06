@@ -46,9 +46,9 @@ public class SignUpController implements Initializable {
        if(user.getText().equals("") || pwd.getText().equals("") || email.getText().equals("") || name.getText().equals("")){
            label1.setText("All fields are to be filled");
        }
-       else if(email.getText().matches("^(?=.{1,64}@)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*@[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$")==false || pwd.getText().equals("\"^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$\"")==false ){
-           label1.setText("Invalid Email ");
-       }
+//       else if(email.getText().matches("^(?=.{1,64}@)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*@[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$")==false || pwd.getText().equals("\"^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$\"")==false ){
+//           label1.setText("Invalid Email ");
+//       }
        else {
            String a=(name.getText());
            String b=(user.getText());
